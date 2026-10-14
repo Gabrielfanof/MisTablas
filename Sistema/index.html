@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Tablas | Escritorio de aventuras</title>
+  <link rel="stylesheet" href="CSS/menu.css">
+</head>
+<body class="desk-page">
+  <header class="menu-topbar">
+    <a class="brand" href="../index.html" aria-label="Volver a la entrada">✦ Mis Tablas</a>
+    <div class="student-badge">
+      <img id="menuAvatar" src="IMAGEN/avatares/Avatar1.jpg" alt="Tu avatar">
+      <span>¡Hola, <strong id="menuName">Explorador</strong>!</span>
+    </div>
+  </header>
+  <main class="desk-main">
+    <section class="desk-heading">
+      <p class="eyebrow">TU ESCRITORIO DE AVENTURAS</p>
+      <h1>¿Qué vamos a aprender hoy?</h1>
+      <p>Abre una carpeta para descubrir tu próxima misión matemática.</p>
+      <div class="progress-summary">
+        <span>Progreso de aprendizaje</span>
+        <strong id="menuProgressLabel">0%</strong>
+        <div class="progress-track"><div id="menuProgressFill"></div></div>
+        <small id="menuProgressMessage">¡Empieza con cualquier tabla y llena tu mapa de estrellas!</small>
+      </div>
+    </section>
+
+    <section class="desk-scene" aria-label="Carpetas interactivas sobre una mesa de estudio">
+      <div class="paper paper-a"><span>3 × 4 = ?</span><i>✎</i></div>
+      <div class="paper paper-b"><span>¡Tú puedes!</span><b>★ ★ ★</b></div>
+      <div class="pencil pencil-one"></div><div class="pencil pencil-two"></div>
+      <div class="ruler"></div><div class="paperclip">⌁</div>
+      <div class="sticky-note"><b>RECUERDA</b><br>Multiplicar es sumar grupos iguales.</div>
+      <div class="folder-grid">
+        <button class="folder folder-learn" data-destination="aprender.html" type="button">
+          <span class="folder-tab"></span><span class="folder-sticker">✦</span>
+          <span class="folder-content"><span class="folder-icon">📘</span><strong>Aprender tablas</strong><small>Explora del 2 al 10</small><span class="folder-peek">Grupos, patrones y pistas...</span></span>
+        </button>
+        <button class="folder folder-games" data-destination="juegos.html" type="button">
+          <span class="folder-tab"></span><span class="folder-sticker">★</span>
+          <span class="folder-content"><span class="folder-icon">🎮</span><strong>Juegos y desafíos</strong><small>Practica de otra manera</small><span class="folder-peek">Memoria, retos y velocidad...</span></span>
+        </button>
+        <button class="folder folder-progress" data-destination="progreso.html" type="button">
+          <span class="folder-tab"></span><span class="folder-sticker">✓</span>
+          <span class="folder-content"><span class="folder-icon">📊</span><strong>Progreso y puntaje</strong><small>Mira cuánto has avanzado</small><span class="folder-peek">Resultados y tablas dominadas...</span></span>
+        </button>
+        <button class="folder folder-awards" data-destination="logros.html" type="button">
+          <span class="folder-tab"></span><span class="folder-sticker">★</span>
+          <span class="folder-content"><span class="folder-icon">🏅</span><strong>Logros y recompensas</strong><small>Colecciona tus estrellas</small><span class="folder-peek">Insignias que ganas practicando...</span></span>
+        </button>
+        <button class="folder folder-simce" id="simceFolder" data-section="simce" data-destination="simce.html" type="button">
+          <span class="folder-tab"></span><span class="folder-sticker">10/10</span>
+          <span class="folder-content"><span class="folder-icon">📝</span><strong>Ensayo tipo SIMCE</strong><small id="simceStatus">Se desbloquea al llegar al 70%</small><span class="folder-peek">Problemas de la vida cotidiana...</span></span>
+          <span class="lock-overlay" id="simceLock">🔒</span>
+        </button>
+      </div>
+    </section>
+    <p class="desk-tip">Consejo: pasa el cursor sobre una carpeta para entreabrirla. Haz clic para abrirla por completo.</p>
+  </main>
+  <script src="JS/menu.js"></script>
+</body>
+</html>

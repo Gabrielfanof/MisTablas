@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Aprender tablas | Mis Tablas</title><link rel="stylesheet" href="CSS/aprender.css"></head>
+<body>
+<header class="topbar"><a class="back-link" href="index.html">← Volver al escritorio</a><div class="student-mini"><img id="studentAvatar" src="IMAGEN/avatares/Avatar1.jpg" alt="Tu avatar"><span id="studentName">Explorador</span></div></header>
+<main class="page">
+<section class="intro"><p class="eyebrow">LABORATORIO MATEMÁTICO</p><h1>¡Aprende jugando!</h1><p>Elige una tabla, observa los grupos y responde 10 preguntas. Puedes repetir la práctica para mejorar tu resultado.</p></section>
+<section class="table-picker"><h2>Elige tu tabla</h2><div id="tableButtons" class="table-buttons" aria-label="Seleccionar tabla"></div></section>
+<section class="lesson-grid">
+<article class="visual-card"><div class="card-heading"><div><p class="eyebrow">MIRA Y DESCUBRE</p><h2 id="lessonTitle">La tabla del 2</h2></div><span class="big-number" id="bigNumber">× 2</span></div><p id="lessonExplanation">La multiplicación representa grupos iguales.</p><div id="objectGroups" class="object-groups" aria-label="Representación visual de grupos"></div><div class="equation" id="visualEquation">2 grupos de 2 = 4</div><p class="hint" id="patternHint">Pista: en la tabla del 2, los resultados aumentan de 2 en 2.</p></article>
+<article class="quiz-card"><div class="quiz-top"><span id="questionCounter">Pregunta 1 de 10</span><span id="liveScore">Aciertos: 0</span></div><div class="quiz-track"><div id="quizProgress"></div></div><p class="eyebrow">TU RETO</p><h2 id="questionText">¿Cuánto es 2 × 1?</h2><p id="questionHelp" class="question-help">Elige la respuesta correcta.</p><div id="answerOptions" class="answer-options"></div><div id="feedback" class="feedback" aria-live="polite"></div><div class="quiz-actions"><button id="hintButton" class="secondary-button" type="button">💡 Ver pista</button><button id="nextButton" class="primary-button" type="button" disabled>Siguiente →</button></div>
+<div id="resultPanel" class="result-panel" hidden><div class="result-medal" id="resultMedal">⭐</div><h2 id="resultTitle">¡Buen trabajo!</h2><p id="resultSummary"></p><p id="resultAdvice"></p><button id="retryButton" class="primary-button" type="button">Repetir para mejorar</button><button id="chooseAnotherButton" class="secondary-button" type="button">Elegir otra tabla</button></div></article>
+</section>
+<section class="overall-progress"><div><p class="eyebrow">TU CAMINO DE APRENDIZAJE</p><h2>Progreso de las tablas</h2><p>Se usa el mejor resultado guardado de cada tabla para calcular tu avance.</p></div><div class="overall-number" id="overallPercent">0%</div><div class="overall-track"><div id="overallFill"></div></div><p id="unlockMessage" class="unlock-message">Al alcanzar un 70 % de progreso global podrás entrar al ensayo tipo SIMCE.</p><div id="tableScores" class="table-scores"></div></section>
+</main><script src="JS/aprender.js"></script></body></html>
